@@ -8,8 +8,6 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         Student s1 = new Student("21900651", "정광진");
 
-
-
         System.out.println(s1);
     }
 }
