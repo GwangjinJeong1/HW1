@@ -29,13 +29,16 @@ public class WordManager {
         while (true) {
             int menu = selectMenu();
             if(menu == 0) break;
-            if(menu == 4) {
-                // create
-                wordCRUD.addWord();
-            }
-            else if(menu == 1){
-                // list
-                wordCRUD.listAll();
+            switch (menu) {
+                case 1 -> wordCRUD.listAll();
+                case 2 -> wordCRUD.searchLevel();
+                case 3 -> wordCRUD.searchWord();
+                case 4 -> wordCRUD.addWord();
+                case 5 -> {
+                }
+                case 6 -> {
+                }
+                case 7 -> wordCRUD.saveFile();
             }
         }
     }

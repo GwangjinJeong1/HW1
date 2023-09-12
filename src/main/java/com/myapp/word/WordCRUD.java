@@ -1,8 +1,5 @@
 package com.myapp.word;
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -93,6 +90,30 @@ public class WordCRUD implements ICRUD {
         System.out.println("--------------------");
         return newList;
     }
+    public ArrayList<Word> listAll(int level){
+        int j = 0;
+        ArrayList<Word> newList = new ArrayList<>();
+        System.out.println("--------------------");
+        for (int i = 0; i< list.size(); i++){
+            int wordLevel = list.get(i).getLevel();
+            if(wordLevel != level) continue;
+            System.out.print(i + 1 + " ");
+            System.out.println(list.get(i).toString());
+            newList.add(list.get(i));
+        }
+        System.out.println("--------------------");
+        return newList;
+    }
+    public void searchLevel(){
+        System.out.println("=> 레벨(1:초급, 2:중급, 3:고급) 선택: ");
+        int inputLevel = s.nextInt();
+        listAll(inputLevel);
+    }
+    public void searchWord(){
+        System.out.println("=> 검색할 단어 입력 : ");
+        String inputWord = s.next();
+        listAll(inputWord);
+    }
     public void loadFile() {
         try {
             BufferedReader br = new BufferedReader(new FileReader(fname));
@@ -113,5 +134,18 @@ public class WordCRUD implements ICRUD {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    public void saveFile(){
+        try {
+            PrintWriter pr = new PrintWriter(new FileWriter("test.txt"));
+            for(Word one : list) {
+                pr.write(one.toFileString());
+            }
+            pr.close();
+            System.out.println("\n모든 단어 파일 저장 완료 !!!\n");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
