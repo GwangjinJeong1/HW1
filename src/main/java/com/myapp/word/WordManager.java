@@ -34,10 +34,8 @@ public class WordManager {
                 case 2 -> wordCRUD.searchLevel();
                 case 3 -> wordCRUD.searchWord();
                 case 4 -> wordCRUD.addWord();
-                case 5 -> {
-                }
-                case 6 -> {
-                }
+                case 5 -> wordCRUD.updateItem();
+                case 6 -> wordCRUD.deleteItem();
                 case 7 -> wordCRUD.saveFile();
             }
         }
