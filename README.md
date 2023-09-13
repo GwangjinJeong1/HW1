@@ -14,6 +14,7 @@
 ---
 ### 단어수정
 <img width="384" alt="update" src="https://github.com/GwangjinJeong1/HW1/assets/127232362/1bccd070-05d1-437f-b424-e6cde1b55940">
+|
 ### 단어삭제
 <img width="375" alt="delete" src="https://github.com/GwangjinJeong1/HW1/assets/127232362/6191af0f-7ebd-4c7f-b525-555fae683c08">
 ---
