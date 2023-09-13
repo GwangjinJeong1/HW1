@@ -46,7 +46,7 @@ public class WordCRUD implements ICRUD {
         String newMeaning = s.nextLine();
         Word newWord = list.get(searchList.get(num - 1));
         newWord.setMeaning(newMeaning);
-        System.out.println("단어 수정이 성공적으로 되었습니다!!");
+        System.out.println("\n단어 수정이 성공적으로 되었습니다!!\n");
     }
 
     @Override
