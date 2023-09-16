@@ -8,12 +8,16 @@
 <img width="317" alt="list" src="https://github.com/GwangjinJeong1/HW1/assets/127232362/71697e9f-f940-4e5b-98d4-4a3ebb00085e">
 
 
+### 목록전체보기
+<img width="378" alt="listAll" src="https://github.com/GwangjinJeong1/HW1/assets/127232362/67e3851b-d12e-4eb6-b951-a4559ec00c72">
+
+
 ### 수준별 단어보기
 <img width="370" alt="level" src="https://github.com/GwangjinJeong1/HW1/assets/127232362/696e25fc-ba0d-4e72-adde-a389adb532ee">
 
 
 ### 단어검색
-<img width="176" alt="loadFile" src="https://github.com/GwangjinJeong1/HW1/assets/127232362/bc9c4c45-3655-4ad9-955d-17bf3ca38ef2">
+<img width="366" alt="search" src="https://github.com/GwangjinJeong1/HW1/assets/127232362/733c3fdc-518a-47ce-a564-74321afcc954">
 
 
 ### 단어수정
@@ -25,7 +29,7 @@
 
 
 ### 파일읽기
-<img width="366" alt="search" src="https://github.com/GwangjinJeong1/HW1/assets/127232362/733c3fdc-518a-47ce-a564-74321afcc954">
+<img width="176" alt="loadFile" src="https://github.com/GwangjinJeong1/HW1/assets/127232362/bc9c4c45-3655-4ad9-955d-17bf3ca38ef2">
 
 
 ### 파일저장
